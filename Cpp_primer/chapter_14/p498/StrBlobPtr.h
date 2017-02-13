@@ -8,7 +8,7 @@ public:
 	StrBlobptr() :curr(0) {}
 	StrBlobptr(StrBlob &a, size_t b = 0) :wptr(a.data), curr(b) {}
 
-	bool operator!=(const StrBlobptr& p) { return p.curr != curr; }//github上的方法，重载了运算符
+	bool operator!=(const StrBlobptr& p) { return p.curr != curr; }
 
 	string& deref() const;
 	StrBlobptr& incr();//前缀递增
